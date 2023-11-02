@@ -1,0 +1,175 @@
+1)Multiple Inheritance
+
+package practice;
+interface Red{
+ void show();
+ }
+interface Green{
+	void accept();
+}
+class Yellow implements Red,Green{
+	public void show() {
+		System.out.println("It is red colour");
+	}
+	public void accept() {
+		System.out.println("It is Green Colour");
+	}
+}
+
+public class MultipleInh2 {
+
+	public static void main(String[] args) {
+		Yellow y=new Yellow();
+		y.show();
+		y.accept();
+	}
+
+}
+
+
+
+
+
+2)SAMPE SUPER
+
+package assignment;
+class bank
+{
+	void show()
+	{
+		System.out.println("0% intreast");
+	}
+}
+	class sbi extends bank
+	{
+		void show()
+		{
+			System.out.println("7% interset");
+		}
+	}
+		class axis extends bank
+		{
+			void show()
+		
+		{
+			System.out.println("8% intrest");
+		}
+		}
+
+
+public class Overriding7 {
+
+	public static void main(String[] args) {
+		
+sbi s=new sbi();
+s.show();
+axis a=new axis();
+a.show();
+
+
+}
+
+}
+
+
+
+
+3)OVERRIDE
+
+
+
+package assignment;
+class slik
+{
+	int cost=2000;
+}
+class kitkat extends slik
+{
+	int cost= 7000;
+	void show()
+	{
+		System.out.println(super.cost+" "+cost);
+	}
+}
+
+public class Super {
+
+	public static void main(String[] args) {
+		kitkat k=new kitkat();
+		k.show();
+
+	}
+
+}
+
+
+
+4)SWAP 
+
+package assignment;
+
+public class Swap {
+	void show(int a,int b)
+	{
+		int c;
+		c=a;
+		a=b;
+		b=c;
+		System.out.println(a+" "+b);
+		
+	}
+	void show(double x, double y)
+	{
+		double z;
+		z=x;
+		x=y;
+		y=z;
+		System.out.println(x+" "+y);
+	}
+
+	public static void main(String[] args) {
+		Swap s=new Swap();
+		s.show(100, 200);
+		s.show(23.0, 33.0);
+	}
+
+}
+
+
+
+5)HIRERCHIAL
+
+
+package assignment;
+abstract class food
+{
+	abstract void cost ();
+}
+	class biryani extends food
+	{
+		void cost()
+		{
+			System.out.println("10000");
+		}
+	}
+		class kfc extends food
+		{
+			void cost()
+		{
+			System.out.println("20");
+		}
+	}
+
+public class H {
+
+	public static void main(String[] args) {
+biryani l=new biryani();
+l.cost();
+kfc n=new kfc();
+n.cost();
+	}
+}
+
+
+
+
