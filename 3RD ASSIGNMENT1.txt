@@ -1,0 +1,151 @@
+1)MULTIPLICATIN
+
+
+package arrays;
+
+import java.util.Scanner;
+
+public class Assign{
+
+	public static void main(String[] args) {
+		int[][] a=new int[2][2];
+		int[][] b=new int[2][2];
+	    int[][] c=new int[2][2];
+	    System.out.println("enter the array");
+	    Scanner sc=new Scanner(System.in);
+	    for(int i=0; i<=1; i++)
+	    {
+	    	for(int j=0; j<=1; j++)
+	    	{
+	    	a[i][j]=sc.nextInt();
+	    		}
+	    }
+	    		System.out.println("enter second is");
+	    		for(int i=0; i<=1; i++)
+	    		{
+	    			for(int j=0; j<=1; j++)
+	    			{
+	    				b[i][j]=sc.nextInt();
+	    				
+	    			}
+	    		}
+	    			System.out.println("result is");
+	    			for(int i=0; i<=1; i++)
+	    			{
+	    				for(int j=0; j<=1; j++)
+	    				{
+	    					c[i][j]=0;
+	    					for(int k=0;k<=1;k++)
+	    					c[i][j]=c[i][j]+(a[i][k])*(b[k][j]);
+	    					System.out.print(c[i][j]+" ");
+	    					
+	    				}
+	    				System.out.println();
+	    			}
+	    			
+	    			
+	    			 
+2) STUDENT DETAILS
+
+
+
+package arrays;
+
+import java.util.Scanner;
+
+public class Singledemo {
+
+	public static void main(String[] args) {
+		int[] sid=new int[1];
+		String[] grade=new String[1];
+		double[] marks=new double[1];
+		System.out.println("first array");
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<=0; i++)
+		{
+			sid[i]=sc.nextInt();
+			grade[i]=sc.next();
+			marks[i]=sc.nextDouble();
+		}
+			System.out.println("enter result");
+			for(int i=0;i<=0; i++)
+			{
+		   System.out.println(sid[i]+ " "+ grade[i]+" "+ marks[i]);
+	}
+}
+}
+
+
+
+
+
+
+3) JAGGED
+
+
+package arrays;
+
+public class JJagged {
+
+	public static void main(String[] args) {
+		int[][] a=new int[3][];
+		a[0]=new int[3];
+		a[1]=new int[2];
+		a[2]=new int[4];
+		// first row
+		a[0][0]=11;
+		a[0][1]=12;
+		a[0][2]=14;
+		//second row
+		a[1][0]=51;
+		a[1][1]=61;
+		//third row
+		a[2][0]=01;
+		a[2][1]=91;
+		a[2][2]=81;
+		a[2][3]=21;
+		System.out.println("jagged the array");
+		
+		for(int i=0;i<=2;i++)
+		{
+			for(int j=0;j<=a[i].length-1;j++)
+			{
+		System.out.print(a[i][j]+" ");
+		}
+		
+			System.out.println();
+		}
+	}
+}
+
+
+
+4)EVEN & ODD
+
+
+package arrays;
+
+public class Evenodd {
+
+	public static void main(String[] args) {
+		int[] a= {1,2,3,4,5,6,7,8,9,10};
+		int even=0,odd=0;
+		System.out.println("enter the array");
+		for(int i=0;i<=9;i++)
+		{
+			if(a[i]%2==0)
+			{
+				System.out.println(a[i]+"it is even number");
+				even++;
+				
+			}
+			else
+			{
+				System.out.println(a[i]+"it is odd number");
+				odd++;
+			}
+		}
+	}
+
+}
+
