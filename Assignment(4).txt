@@ -1,0 +1,100 @@
+1)
+package practice;
+
+import java.util.Scanner;
+
+public class Students {
+	int sid;
+	String sname;
+	double marks;
+	void input() {
+		System.out.println("enter student details");
+
+	Scanner sc = new Scanner(System.in);
+	sid=sc.nextInt();
+	sname=sc.next();
+	marks=sc.nextDouble();}
+	void output() {
+		System.out.println(sid+" "+sname+" "+marks);
+	}
+
+	public static void main(String[] args) {
+		Students S=new Students();
+		S.input();
+		S.output();
+
+	}
+
+}
+
+
+
+
+
+2)
+package practice;
+
+public class Bankcustomer {
+	int acno;
+	String atype;
+	double amt;
+Bankcustomer(int x){
+	acno=x;
+		System.out.println(x);
+		}
+	Bankcustomer(String y,double z){
+		atype=y;
+	 amt=z;
+		System.out.println(y+" "+z);
+	}
+
+
+	public static void main(String[] args) {
+		Bankcustomer B1=new Bankcustomer(77);
+		Bankcustomer B2=new Bankcustomer("current",70000);
+
+	}
+
+}
+
+
+
+
+
+3) 
+
+package practice;
+class Person{
+	int pid;
+	String pname;
+	Person(int x,String y){
+		pid=x;
+		pname=y;
+	}}
+class Student extends Person{
+       double marks;
+	Student(int x, String y,double z) {
+		super(x, y);
+		marks=z;
+	System.out.println(x+" "+y+" "+z);
+	}
+	}
+class Emp extends Person{
+	int sal;
+Emp(int x, String y,int m) {
+		super(x, y);
+		sal=m;
+		System.out.println(x+" "+y+" "+m);	
+	}}
+
+public class Inhtassign {
+	
+
+	public static void main(String[] args) {
+		Student S=new Student(7,"raj",9000);
+        Emp E=new Emp(77,"charan",9200000);
+	}
+
+}
+
+
